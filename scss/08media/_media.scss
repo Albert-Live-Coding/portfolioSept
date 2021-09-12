@@ -1,2 +1,183 @@
-@import 'tablet';
-@import 'monitor';
+@media screen and (min-width: 360px) and (min-height:740px) {
+    
+    .services__icon {
+        margin-top: 10vh;
+    }
+    
+}
+@media screen and (min-width: 414px) and (min-height: 846px){
+    
+    .services {
+        
+        &__title {
+            margin-bottom: 5vh;
+        }
+        
+        &__btn{
+            margin-top: 5vh;
+        }
+    }
+}
+
+
+@media screen and (min-width: 320px) and (min-height:568px) {
+
+    .hero {
+
+        &__btn {
+            margin-bottom: 0;
+        }
+        
+        &__icon {
+            margin-top: 10vh;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (min-height: 812px) {
+
+    .hero__logo {
+        margin-top: 10vh;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+
+    .header__nav{
+        display: block;
+
+        ul {
+            display: flex;
+        }
+    }
+
+    .burger__container {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 360px) and (min-height:740px) {
+
+    
+    .hero__icon {
+        margin-bottom: 0;
+    }
+
+    .services {
+        height: 80vh;
+    }
+
+/*     h2 {
+        margin-top: 10vh;
+    }
+ */
+    .hero__logo {
+        margin-bottom: 5vh;
+    }
+
+    .hero__services {
+        font-size: $f4;
+        margin-top: 5vh;
+    }
+
+    iframe {
+        width: 80vw;
+    }
+
+    .contact__txt {
+        text-align: center;
+    }
+
+    .contact__link {
+        margin-left: 25vw;
+    }
+    .contact__txt {
+        font-size: $f3;
+    }
+
+    .portfolio__title {
+        margin-top: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+
+    .header__nav{
+        display: block;
+
+        ul {
+            display: flex;
+        }
+    }
+
+    .burger__container {
+        display: none;
+    }
+
+    .header__logo {
+        width: $imgSmall;
+    }
+
+    .hero {
+        
+        &__logo {
+            height: 30vh;
+            margin: 10vh 0 2vh;
+        }
+
+        &__services {
+            margin-top: 2vh;
+            margin-bottom: 0;
+        }
+
+        &__btn {
+            margin-top: 0;
+        }
+    }
+
+    .services {
+        
+        &__title{
+            margin-top: 10vh;
+        }
+    }
+
+    .portfolio__title {
+        margin-top: 10vh;
+    }
+
+    .contact__title {
+        margin: 10vh 0 0;
+    }
+
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    .hero__logo {
+        height: $imgSmall;
+    }
+
+   .services__title {
+       margin-top: 15vh;
+    }
+
+    .portfolio__title {
+        margin-top: 15vh;
+    }
+
+    .contact__txt {
+        margin-bottom: 5vh;
+    }
+
+    .contact__link {
+        margin-left: 32.5vw;
+    }
+    iframe {
+        margin-top: 7vh;
+    }
+}

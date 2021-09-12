@@ -1,0 +1,16 @@
+@keyframes underline {
+    0%{
+        text-decoration: none;
+    }
+    
+    6%{
+        text-decoration: underline 3px solid $accent;
+    }
+    13%{
+        text-decoration: underline 3px solid $accent;
+    }
+    25%{
+        text-decoration: none;
+    }
+}
+

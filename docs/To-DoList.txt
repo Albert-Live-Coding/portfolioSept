@@ -1,1 +1,1 @@
-convert colorCalculator and fontSize to scss loops
+substituir flecha down por up en inicio artículo

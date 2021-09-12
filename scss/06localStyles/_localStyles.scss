@@ -1,8 +1,12 @@
+@import '../07animations/animations';
+
+
 /* HERO */
 
 
 .hero{
-  
+    height: 100vh - header;
+
     &__logo{
         width: $imgBig;
         margin-bottom: 7.5vh;
@@ -11,49 +15,47 @@
     &__services{
         padding: .5em 1em;
         line-height: 1.3em;
+        margin-top: 10vh;
     }
 
     &__btn{
         margin-top: 2vh;
-        margin-bottom: 8vh;
+        margin-bottom: 3vh;
     }
 
-    &__icon {
-        margin-top: 10vh;
-    }
+  /*   &__icon {
+        margin-top: 15vh;
+    } */
 }
 
 /* SERVICES */
 
 .services {
+    
+    height: 100vh;
+
     &__title{
         font-size: 2.7rem;
         font-style: italic;
+        margin-top: 10vh;
     }
 
     &__quote{
-        margin: 1.2em 0;
+        margin: .9em 0;
         font-size: $f2;
-        /* text-align: center; */
         color: $black;
-        &::before{
-            content: '"';
-            margin-right: .25em;
-        }
-        &::after{
-            content: '"';
-            margin-left: .25em;
-        }
+        position: relative;
     }
 
     &__btn{
-        margin-top: 6vh;
+        margin-top: 3vh;
     }
 
     &__icon {
-        margin-top: 4.5vh;
+        margin-top: 3.5vh;
     }
 }
+
 
 .quotes__container{
     margin-top: 2vh;
@@ -62,13 +64,18 @@
 
 /* PORTFOLIO */
 
+.portfolio__title {
+    margin-top: 7vh;
+}
 
 /* CONTACT */
 
 .contact {
 
+    height: 80vh;
+
     &__title{
-        margin-bottom: 10vh;
+        margin: 7vh 0 10vh;
     }
     &__link{
         display: block;
@@ -97,6 +104,6 @@
 }
 
 iframe {
-    height: 100%;
+    height: 75%;
     margin-top: 5vh;
 }

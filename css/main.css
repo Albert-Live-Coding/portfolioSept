@@ -507,7 +507,6 @@ a {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 nav a {
@@ -515,6 +514,104 @@ nav a {
 }
 
 /* @import 'logo'; */
+#menu-bar {
+  z-index: 2;
+}
+
+#menu {
+  width: 35px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+li {
+  margin: 1em 0;
+}
+
+/* THE THREE BARS */
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: grey;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+/* NAV */
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.nav li {
+  list-style: none;
+  padding: 16px 0;
+}
+
+.nav {
+  padding: 0;
+  margin: 0 20px;
+  transition: 0.3s ease;
+  display: none;
+}
+
+/* BACKGROUND WHEN DISPLAYED */
+.menu-bg, #menu-bar {
+  top: 0;
+  left: 70vw;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 10vw;
+  height: 0;
+  margin: 30px 0 20px 0;
+  padding-right: 100px;
+  background: orange;
+  transition: 0.3s ease;
+}
+
+/* ANIMATION */
+.change-bg {
+  width: 0px;
+  height: 400px;
+  transform: translate(10%, -30%);
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change {
+  display: block;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -630,16 +727,23 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  align-items: center;
+  position: fixed;
+  inset: 0 0 auto 0;
+  background-color: white;
+  z-index: 500;
+}
+
+.header {
+  /*  &__burger {
+        background-color: $grey;
+        width: 50px;
+        height: 50px;
+    }  */
 }
 
 .header__nav {
   display: none;
-}
-
-.header__burger {
-  background-color: rgba(92, 92, 92, 0.75);
-  width: 50px;
-  height: 50px;
 }
 
 .header__logo {
@@ -678,7 +782,29 @@ section__img {
   margin: 2em 0;
 }
 
+@keyframes underline {
+  0% {
+    text-decoration: none;
+  }
+  6% {
+    text-decoration: underline 3px solid #ff7b00;
+  }
+  13% {
+    text-decoration: underline 3px solid #ff7b00;
+  }
+  25% {
+    text-decoration: none;
+  }
+}
+
 /* HERO */
+.hero {
+  height: 100vh-header;
+  /*   &__icon {
+        margin-top: 15vh;
+    } */
+}
+
 .hero__logo {
   width: 40vw;
   margin-bottom: 7.5vh;
@@ -687,46 +813,38 @@ section__img {
 .hero__services {
   padding: .5em 1em;
   line-height: 1.3em;
+  margin-top: 10vh;
 }
 
 .hero__btn {
   margin-top: 2vh;
-  margin-bottom: 8vh;
-}
-
-.hero__icon {
-  margin-top: 10vh;
+  margin-bottom: 3vh;
 }
 
 /* SERVICES */
+.services {
+  height: 100vh;
+}
+
 .services__title {
   font-size: 2.7rem;
   font-style: italic;
+  margin-top: 10vh;
 }
 
 .services__quote {
-  margin: 1.2em 0;
+  margin: .9em 0;
   font-size: 2.4rem;
-  /* text-align: center; */
   color: #5c5c5c;
-}
-
-.services__quote::before {
-  content: '"';
-  margin-right: .25em;
-}
-
-.services__quote::after {
-  content: '"';
-  margin-left: .25em;
+  position: relative;
 }
 
 .services__btn {
-  margin-top: 6vh;
+  margin-top: 3vh;
 }
 
 .services__icon {
-  margin-top: 4.5vh;
+  margin-top: 3.5vh;
 }
 
 .quotes__container {
@@ -734,9 +852,17 @@ section__img {
 }
 
 /* PORTFOLIO */
+.portfolio__title {
+  margin-top: 7vh;
+}
+
 /* CONTACT */
+.contact {
+  height: 80vh;
+}
+
 .contact__title {
-  margin-bottom: 10vh;
+  margin: 7vh 0 10vh;
 }
 
 .contact__link {
@@ -770,13 +896,154 @@ section__img {
 }
 
 iframe {
-  height: 100%;
+  height: 75%;
   margin-top: 5vh;
 }
 
-/* @media screen and (min-width: 768px){
-    
-} */
-/* @media screen and (min-width: 1440px){
-    
-} */
+@keyframes underline {
+  0% {
+    text-decoration: none;
+  }
+  6% {
+    text-decoration: underline 3px solid #ff7b00;
+  }
+  13% {
+    text-decoration: underline 3px solid #ff7b00;
+  }
+  25% {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 360px) and (min-height: 740px) {
+  .services__icon {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (min-width: 414px) and (min-height: 846px) {
+  .services__title {
+    margin-bottom: 5vh;
+  }
+  .services__btn {
+    margin-top: 5vh;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-height: 568px) {
+  .hero__btn {
+    margin-bottom: 0;
+  }
+  .hero__icon {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (min-width: 375px) and (min-height: 812px) {
+  .hero__logo {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .header__nav {
+    display: block;
+  }
+  .header__nav ul {
+    display: flex;
+  }
+  .burger__container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 360px) and (min-height: 740px) {
+  .hero__icon {
+    margin-bottom: 0;
+  }
+  .services {
+    height: 80vh;
+  }
+  /*     h2 {
+        margin-top: 10vh;
+    }
+ */
+  .hero__logo {
+    margin-bottom: 5vh;
+  }
+  .hero__services {
+    font-size: 4.1rem;
+    margin-top: 5vh;
+  }
+  iframe {
+    width: 80vw;
+  }
+  .contact__txt {
+    text-align: center;
+  }
+  .contact__link {
+    margin-left: 25vw;
+  }
+  .contact__txt {
+    font-size: 3.2rem;
+  }
+  .portfolio__title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+  .header__nav {
+    display: block;
+  }
+  .header__nav ul {
+    display: flex;
+  }
+  .burger__container {
+    display: none;
+  }
+  .header__logo {
+    width: 8vw;
+  }
+  .hero__logo {
+    height: 30vh;
+    margin: 10vh 0 2vh;
+  }
+  .hero__services {
+    margin-top: 2vh;
+    margin-bottom: 0;
+  }
+  .hero__btn {
+    margin-top: 0;
+  }
+  .services__title {
+    margin-top: 10vh;
+  }
+  .portfolio__title {
+    margin-top: 10vh;
+  }
+  .contact__title {
+    margin: 10vh 0 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero__logo {
+    height: 8vw;
+  }
+  .services__title {
+    margin-top: 15vh;
+  }
+  .portfolio__title {
+    margin-top: 15vh;
+  }
+  .contact__txt {
+    margin-bottom: 5vh;
+  }
+  .contact__link {
+    margin-left: 32.5vw;
+  }
+  iframe {
+    margin-top: 7vh;
+  }
+}

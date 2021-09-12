@@ -22,7 +22,21 @@
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
-      <div class="header__burger"></div>
+      <div class="burger__container">
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#">Über mich</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
     </header>
     <main>
       <article class="hero">
@@ -34,30 +48,30 @@
       <article class="services" id="services">
         <h2 class="services__title">Haben Sie das je gedacht?</h2>
         <div class="quotes__container">
-          <p class="services__quote">Ich habe keine Webseite</p>
-          <p class="services__quote">Ich will mehr <br> Kunden erreichen</p>
-          <p class="services__quote">Ich weiss nicht, wie eine <br>Webseite zu erstellen.</p>
-          <p class="services__quote">Ich wünsche mir eine<br> aktuele Webseite</p>
+          <p class="services__quote" style="--order: 1">"Ich habe keine Webseite"</p>
+          <p class="services__quote" style="--order: 3">"Ich will mehr <br> <span class="quote__animation">Kunden erreichen</span>"</p>
+          <p class="services__quote" style="--order: 2">"Ich weiss nicht, wie eine <br>Webseite zu erstellen"</p>
+          <p class="services__quote" style="--order: 4">"Ich wünsche mir eine<br> aktuele Webseite"</p>
         </div>
         <a href="#kontakt"><button class="btn__txt services__btn">Dabei helfe ich Ihnen gerne!</button></a>
         <a href="#portfolio"><img src="./icon/arrow-down.svg" alt="arrow down" class="icon__small services__icon"></a>      
       </article>
       <article class="portfolio" id="portfolio">
-        <h2>Portfolio</h2>
+        <h2 class="portfolio__title">Portfolio</h2>
         <section class="card">
           <h3 class="card__title">Café Muster</h3>
           <img src="./img/cafe-muster.svg" alt="café muster webseite" class="card__img">
-          <button class="card__btn btn__txt">Erfahren Sie mehr</button>
+          <button class="card__btn btn__txt">Über diese Web</button>
         </section>
         <section class="card">
           <h3 class="card__title">Anne Gibson Photography</h3>
           <img src="./img/anne-gibson.svg" alt="Anne Gibson Fotography" class="card__img">
-          <button class="card__btn btn__txt">Erfahren Sie mehr</button>
+          <button class="card__btn btn__txt">Über diese Web</button>
         </section>
         <section class="card">
           <h3 class="card__title">The Underground Kingdom</h3>
           <img src="./img/underground-kingdom.svg" alt="The-Underground-Kingdom" class="card__img">
-          <button class="card__btn btn__txt">Erfahren Sie mehr</button>
+          <button class="card__btn btn__txt">Über diese Web</button>
         </section>
         <a href="#kontakt"><img src="./icon/arrow-down.svg" alt="arrow down" class="icon__small"></a>      
       </article>
@@ -77,7 +91,7 @@
             <li><a href="https://codepen.io/your-work" target="blank"><img src="./icon/4519014_codepen_icon.svg" alt="codepen-io" class="icon__social"></a></li>
           </ul>
         </section>
-      </article>
     </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>
