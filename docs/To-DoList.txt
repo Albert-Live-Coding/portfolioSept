@@ -1,1 +1,13 @@
 substituir flecha down por up en inicio artículo
+
+@media  imagenes en pantalla grande
+
+animaciones en btn, .services
+
+texto como bg
+
+über mich
+
+pop-up fenster para proyectos
+
+hosting
