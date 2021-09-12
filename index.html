@@ -22,56 +22,61 @@
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
+      <div class="header__burger"></div>
     </header>
     <main>
       <article class="hero">
         <img src="./icon/logo.svg" alt="icon A Web Dev" class="hero__logo">
-        <blockquote class="services__hero">Ich helfe Ihnen gerne <br>mehr Kunden zu gewinnen</blockquote>
-        <a href=""><button  class="btn__txt">Erfahren Sie mehr!</button></a>
-        <a href=""><img src="./icon/arrow-down.svg" alt="arrow down"></a>
+        <blockquote class="hero__services">Ich helfe Ihnen mehr <br>Kunden zu gewinnen</blockquote>
+        <a href="#kontakt"><button  class="btn__txt hero__btn">Erfahren Sie mehr!</button></a>
+        <a href="#services"><img src="./icon/arrow-down.svg" alt="arrow down" class="icon__small hero__icon"></a>      
       </article>
       <article class="services" id="services">
-        <h2>Haben Sie das je gedacht?</h2>
-        <p>Ich habe keine Webseite</p>
-        <p>Ich will mehr Kunden erreichen</p>
-        <p>Ich weiss nicht, wie eine <br>Webseite zu erstellen.</p>
-        <p>Meine Webseite ist <br>nicht modern</p>
-        <a href=""><button class="btn__txt">Dabei helfe ich Ihnen gerne!</button></a>
-        <a href=""><img src="./icon/arrow-down.svg" alt="arrow down"></a>      
+        <h2 class="services__title">Haben Sie das je gedacht?</h2>
+        <div class="quotes__container">
+          <p class="services__quote">Ich habe keine Webseite</p>
+          <p class="services__quote">Ich will mehr <br> Kunden erreichen</p>
+          <p class="services__quote">Ich weiss nicht, wie eine <br>Webseite zu erstellen.</p>
+          <p class="services__quote">Ich wünsche mir eine<br> aktuele Webseite</p>
+        </div>
+        <a href="#kontakt"><button class="btn__txt services__btn">Dabei helfe ich Ihnen gerne!</button></a>
+        <a href="#portfolio"><img src="./icon/arrow-down.svg" alt="arrow down" class="icon__small services__icon"></a>      
       </article>
       <article class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
         <section class="card">
           <h3 class="card__title">Café Muster</h3>
           <img src="./img/cafe-muster.svg" alt="café muster webseite" class="card__img">
-          <button class="card__btn btn__txt"></button>
+          <button class="card__btn btn__txt">Erfahren Sie mehr</button>
         </section>
         <section class="card">
           <h3 class="card__title">Anne Gibson Photography</h3>
           <img src="./img/anne-gibson.svg" alt="Anne Gibson Fotography" class="card__img">
-          <button class="card__btn btn__txt"></button>
+          <button class="card__btn btn__txt">Erfahren Sie mehr</button>
         </section>
         <section class="card">
           <h3 class="card__title">The Underground Kingdom</h3>
           <img src="./img/underground-kingdom.svg" alt="The-Underground-Kingdom" class="card__img">
-          <button class="card__btn btn__txt"></button>
+          <button class="card__btn btn__txt">Erfahren Sie mehr</button>
         </section>
-        <a href=""><img src="./icon/arrow-down.svg" alt="arrow down"></a>
+        <a href="#kontakt"><img src="./icon/arrow-down.svg" alt="arrow down" class="icon__small"></a>      
       </article>
       <article class="contact" id="kontakt">
-        <h2>Kontakt</h2>
-        <article>
-          <p>Albert Clemente</p>
-          <a href="mailto:albertclem@protonmail.com" id="icon__envelope">albertclem@protonmail.com</a>
-          <a href="tel:01742781779" id="icon__phone">(0)174 2781779</a>
-        </article>
-        <article>
+        <h2 class="contact__title">Kontakt</h2>
+        <section>
+          <p class="contact__txt">Albert Clemente</p>
+          <a href="mailto:albertclem@protonmail.com" id="icon__envelope" class="contact__link">albertclem@protonmail.com</a>
+          <a href="tel:01742781779" id="icon__phone" class="contact__link">(0)174 2781779</a>
+         <!--  <p class="contact__txt" id="icon__office">Dresdner Straße, 56. 01437, Leipzig</p> -->
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5928.254711046319!2d12.392317594468333!3d51.3382750849293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f8410f791e51%3A0x18c5ba4cb9cc460!2sDresdner%20Str.%2056%2C%2004317%20Leipzig!5e0!3m2!1sca!2sde!4v1631446367090!5m2!1sca!2sde" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section>
           <ul>
             <li><a href="https://github.com/AlbertLeipzig" target="blank"><img src="./icon/211903_github_social_icon.svg" alt="github" class="icon__social"></a></li>
             <li><a href="https://twitter.com/albert_clemente" target="blank"><img src="./icon/2561485_twitter_icon.svg" alt="twitter" class="icon__social"></a></li>
             <li><a href="https://codepen.io/your-work" target="blank"><img src="./icon/4519014_codepen_icon.svg" alt="codepen-io" class="icon__social"></a></li>
           </ul>
-        </article>
+        </section>
       </article>
     </main>
   </body>

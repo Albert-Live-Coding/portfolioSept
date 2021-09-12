@@ -1,0 +1,102 @@
+/* HERO */
+
+
+.hero{
+  
+    &__logo{
+        width: $imgBig;
+        margin-bottom: 7.5vh;
+    }
+    
+    &__services{
+        padding: .5em 1em;
+        line-height: 1.3em;
+    }
+
+    &__btn{
+        margin-top: 2vh;
+        margin-bottom: 8vh;
+    }
+
+    &__icon {
+        margin-top: 10vh;
+    }
+}
+
+/* SERVICES */
+
+.services {
+    &__title{
+        font-size: 2.7rem;
+        font-style: italic;
+    }
+
+    &__quote{
+        margin: 1.2em 0;
+        font-size: $f2;
+        /* text-align: center; */
+        color: $black;
+        &::before{
+            content: '"';
+            margin-right: .25em;
+        }
+        &::after{
+            content: '"';
+            margin-left: .25em;
+        }
+    }
+
+    &__btn{
+        margin-top: 6vh;
+    }
+
+    &__icon {
+        margin-top: 4.5vh;
+    }
+}
+
+.quotes__container{
+    margin-top: 2vh;
+}
+
+
+/* PORTFOLIO */
+
+
+/* CONTACT */
+
+.contact {
+
+    &__title{
+        margin-bottom: 10vh;
+    }
+    &__link{
+        display: block;
+        margin: 1.2em 0;
+    }
+
+    &__txt{
+        color: $black;
+    }
+}
+
+
+#icon__envelope::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0e0";
+    margin-right: 1.2em;
+}
+
+#icon__phone::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3cd";
+    margin-right: 1.6em;
+}
+
+#icon__office::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\e066";
+    margin-right: 1em;
+}
+
+iframe {
+    height: 100%;
+    margin-top: 5vh;
+}

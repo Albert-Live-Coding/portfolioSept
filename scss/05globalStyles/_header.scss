@@ -1,11 +1,23 @@
-header, footer{
-    padding: 5vh 20vw;
+header{
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $grey;
+    background-color: $white;
 }
 
-main{
-    margin: 0 20vw;
+
+.header{
+
+    &__nav {
+        display: none;
+    }
+    &__burger {
+        background-color: $grey;
+        width: 50px;
+        height: 50px;
+    }   
+    &__logo {
+        width: $imgMed;
+    }
 }

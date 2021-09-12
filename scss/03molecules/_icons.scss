@@ -1,9 +1,12 @@
-.iconSmall{
-    height: 20px;
-}
-.iconMed{
-    height: 40px;
-}
-.iconBig{
-    height: 60px;
+.icon{
+
+    &__small{
+        height: 20px;
+    }
+    &__med{
+        height: 40px;
+    }
+    &__big{
+        height: 60px;
+    }
 }

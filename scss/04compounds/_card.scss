@@ -2,13 +2,15 @@
     display: flex;
     flex-direction: column;
     border: none;
-    padding: 3em 0 2em;
+    padding: 1.5em 0 2em;
     width: 100%;
+    /* outline: 1px solid red; */
+    margin: 2vh 0;
     &__img{
-        border-radius: 50%;
-        height: $imgSmall;
+        height: $imgBig;
         width: 100%;
         margin: 0 auto;
+        object-fit: cover;
     }
     &__tittle{
         margin: 2em auto 1em;
@@ -17,5 +19,11 @@
         font-size: $f3;
         color: $black;
         margin: 0 1em;
+    }
+
+    &__btn {
+        margin: 4vh auto 0;
+        width: 75%;
+        color: white;
     }
 }

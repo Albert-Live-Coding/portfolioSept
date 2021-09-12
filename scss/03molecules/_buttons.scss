@@ -1,9 +1,10 @@
 button{
-    padding: .5em 1.5em .5em 1.5em;
+    padding: .5em 1em .5em 1em;
     border: none;
     border-radius: 5px;
-    font-size: $f3;
+    font-size: $f15;
     color: $white;
+    background-color: $accent;
     transition: $transitionDuration;
     :hover{
         color: $grey;
