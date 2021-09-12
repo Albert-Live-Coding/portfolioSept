@@ -13,14 +13,14 @@ form{
         padding-left: .25em;
     }
     &__input{
-        outline: 1px solid $primaryCol;
+        outline: 1px solid $black;
         padding: .5em 0 .5em .25em;
-        border: $borderThin solid $primaryCol;
+        border: $borderThin solid $grey;
     }
     &__txt{
-        border: $borderThin solid $primaryCol;
+        border: $borderThin solid $black;
         &:focus{
-            outline: 1.5px solid $primaryCol;
+            outline: 1.5px solid $grey;
         }
     }
     

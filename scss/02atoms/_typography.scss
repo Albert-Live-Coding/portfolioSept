@@ -3,8 +3,8 @@
 @import '../01subAtoms/fontSize';
 
 h1{
-    color: $primaryCol;
-    font-size: $f5;
+    color: $black;
+    font-size: $f4;
     font-weight: 700;
     margin-bottom: .5em;
     line-height: .8em;
@@ -16,38 +16,59 @@ h1{
 }
 
 h2{
-    color: $compCol;
-    font-size: $f4;
-    font-weight: 700;
+    color: $black;
+    font-size: $f3;
+    font-weight: 400;
     margin-bottom: .5em;
     line-height: .8em;
 }
 
 h3{
-    color: $primaryCol;
-    font-size: $f4;
+    color: $black;
+    font-size: $f3;
+    font-weight: 200;
     margin-bottom: .5em;
 }
 
-p, textarea, figcaption, label, input, textarea, li{
-    color: $primaryCol;
-    font-size: $f3;
-    margin-bottom: .5em;
+a{
+    color: $black;
+    font-size: $f1;
+    text-decoration: none;
+    
+    &:hover{
+        color: $grey;
+    }
+    :active{
+        color: $white;
+        background-color: $black;
+    }
+    :focus{
+        color: $white;
+        background-color: $accent;
+    }
 }
 
-a, textarea, figcaption{
-    line-height: 1.5em;
-    width: clamp(45ch, 50%, 75ch);
+p {
+    font-size: $f1;
+    color: black;
+    line-height: 1.6em;
 }
 
-
-.subtitle{
-    font-size: $f3;
-    font-weight: 700;
+.services {
+    &__hero::before {
+        content: '[';
+        color: $accent;
+        font-size: $f4;
+    }
+    &__hero::after {
+        content: ']';
+        color: $accent;
+        font-size: $f4;
+    }
 }
 
 blockquote{
-    color: $primaryCol;
+    color: $black;
     font-size: $f2;
     font-style: italic;
     margin-bottom: .5em;
@@ -56,23 +77,5 @@ blockquote{
     }
     ::after{
         content: '"';
-    }
-}
-
-a{
-    color: $primaryCol;
-    font-size: $f3;
-    text-decoration: none;
-    
-    &:hover{
-        color: $primaryColMuted;
-    }
-    :active{
-        color: white;
-        background-color: $primaryCol;
-    }
-    :focus{
-        color: $primaryColMuted;
-        background-color: $primaryCol;
     }
 }
