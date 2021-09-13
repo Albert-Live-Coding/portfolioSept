@@ -153,7 +153,26 @@
         margin: 10vh 0 0;
     }
 
-
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:'card-img  card-title'
+                            'card-img  card-btn ';
+    }
+    #card-img {
+        grid-area: card-img;
+    }
+    #card-title {
+        grid-area: card-title;
+        margin: 18vh auto 0 auto;
+    }
+    #card-btn {
+        grid-area: card-btn;
+        margin: 0 auto 20vh auto;
+        max-width: 20vw;
+        max-height: 10vh;
+    }
 }
 
 @media screen and (min-width: 1400px) {
