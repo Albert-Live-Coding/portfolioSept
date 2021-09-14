@@ -92,3 +92,53 @@ $underlineAniDuration: 15000ms;
         border: 2px solid $accent;
     }
 }
+
+
+.iconAni1 {
+    height: 45px;
+   // animation: iconAnimation 7s ease-in-out infinite;
+}
+
+.iconAni2 {
+    height: 45px;
+    animation: iconAnimation2 7s ease-in-out infinite;
+}
+
+@keyframes iconAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(1turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes iconAnimation2 {
+    0%{
+    }
+
+    50%{
+
+    }
+
+    62%{
+
+    }
+    74%{
+
+    }
+
+    86%{
+
+    }
+
+    98%{
+
+    }
+
+
+}
