@@ -1,7 +1,3 @@
-animaciones en btn, .services
-
-texto como bg
-
 über mich
 
 pop-up fenster para proyectos

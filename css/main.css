@@ -504,6 +504,13 @@ a {
   height: 60px;
 }
 
+.arrow-bg {
+  background-color: tomato;
+  width: 100vw;
+  padding: 5vh 0;
+  background-size: contain;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -782,6 +789,10 @@ section__img {
   margin: 2em 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .services__quote::before {
   opacity: 0;
   content: ' ';
@@ -955,6 +966,10 @@ section__img {
 iframe {
   height: 75%;
   margin-top: 5vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .services__quote::before {
