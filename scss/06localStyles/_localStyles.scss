@@ -71,7 +71,7 @@
 /* ABOUT ME */
 
 .aboutMeTitle {
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .about {
@@ -164,6 +164,10 @@
     &__title {
         font-size: $f2;
         margin-bottom: 1em;
+    }
+
+    &__btn {
+        margin-bottom: 2vh;
     }
 }
 

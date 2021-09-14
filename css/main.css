@@ -877,18 +877,22 @@ html {
 
 .iconAni1 {
   height: 45px;
+  animation: iconAnimation 7s ease-in-out .5s infinite;
 }
 
 .iconAni2 {
   height: 45px;
-  animation: iconAnimation2 7s ease-in-out infinite;
+  animation: iconAnimation2 7s ease-in-out .5s infinite;
 }
 
 @keyframes iconAnimation {
   0% {
     transform: rotate(0);
   }
-  50% {
+  20% {
+    transform: rotate(0);
+  }
+  40% {
     transform: rotate(1turn);
   }
   100% {
@@ -898,16 +902,32 @@ html {
 
 @keyframes iconAnimation2 {
   0% {
+    position: relative;
+    inset: 0;
   }
-  50% {
+  60% {
+    position: relative;
+    inset: 0;
   }
-  62% {
+  68% {
+    position: relative;
+    inset: 0 0 0 -7.5vw;
   }
-  74% {
+  76% {
+    position: relative;
+    inset: -2.5vh 0 0 -7.5vw;
   }
-  86% {
+  84% {
+    position: relative;
+    inset: -2.5vh 0 0 7.5vw;
   }
-  98% {
+  92% {
+    position: relative;
+    inset: 0 0 0 7.5vw;
+  }
+  100% {
+    position: relative;
+    inset: 0;
   }
 }
 
@@ -972,7 +992,7 @@ html {
 
 /* ABOUT ME */
 .aboutMeTitle {
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 .about {
@@ -1064,6 +1084,10 @@ html {
 .skills__title {
   font-size: 2.4rem;
   margin-bottom: 1em;
+}
+
+.skills__btn {
+  margin-bottom: 2vh;
 }
 
 /* CONTACT */
@@ -1188,18 +1212,22 @@ html {
 
 .iconAni1 {
   height: 45px;
+  animation: iconAnimation 7s ease-in-out .5s infinite;
 }
 
 .iconAni2 {
   height: 45px;
-  animation: iconAnimation2 7s ease-in-out infinite;
+  animation: iconAnimation2 7s ease-in-out .5s infinite;
 }
 
 @keyframes iconAnimation {
   0% {
     transform: rotate(0);
   }
-  50% {
+  20% {
+    transform: rotate(0);
+  }
+  40% {
     transform: rotate(1turn);
   }
   100% {
@@ -1209,16 +1237,32 @@ html {
 
 @keyframes iconAnimation2 {
   0% {
+    position: relative;
+    inset: 0;
   }
-  50% {
+  60% {
+    position: relative;
+    inset: 0;
   }
-  62% {
+  68% {
+    position: relative;
+    inset: 0 0 0 -7.5vw;
   }
-  74% {
+  76% {
+    position: relative;
+    inset: -2.5vh 0 0 -7.5vw;
   }
-  86% {
+  84% {
+    position: relative;
+    inset: -2.5vh 0 0 7.5vw;
   }
-  98% {
+  92% {
+    position: relative;
+    inset: 0 0 0 7.5vw;
+  }
+  100% {
+    position: relative;
+    inset: 0;
   }
 }
 
