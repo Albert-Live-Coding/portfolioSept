@@ -17,8 +17,59 @@
             margin-top: 5vh;
         }
     }
+
+    .about__img-container{
+        height: 25vh;
+    }
 }
 
+@media screen and (min-width: 414px) and (min-height: 896px){
+    
+    .skills__portrait {
+        max-height: 45vh;
+        min-width: 30vw;
+        object-fit: cover;
+        position: relative;
+        top: -4.7vh;
+    }
+
+    @keyframes iconAnimation2 {
+        0% {
+            position: relative;
+            inset: 0;
+        }
+    
+        60% { 
+            position: relative;
+            inset: 0;
+        }
+    
+        68% {
+            position: relative;
+            inset: 0 0 0 -7.5vw;
+        }
+    
+        76% {
+            position: relative;
+            inset: -1.5vh 0 0 -7.5vw;
+        }
+    
+        84% {
+            position: relative;
+            inset: -1.5vh 0 0 7.5vw;
+        }
+    
+        92% {
+            position: relative;
+            inset: 0 0 0 7.5vw;
+        }
+    
+        100% {
+            position: relative;
+            inset: 0;
+        }
+    }
+}
 
 @media screen and (min-width: 320px) and (min-height:568px) {
 
@@ -32,6 +83,39 @@
             margin-top: 10vh;
         }
     }
+
+    .about__img-container {
+        width: 27vw;
+        margin-right: 15vw;
+    }
+
+    .skills__portrait {
+        width: 17vw;
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 384px) and (min-height: 640px) {
+    
+    .skills__portrait {
+        height: 35vh;
+        width: 20vw;
+    }
+
+    .skills__btn {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 411px) and (min-height: 823px) {
+
+    .skills__portrait {
+        height: 27vh;
+        width: 25vw;
+        position: relative;
+        top: -5vh;
+    }
+
 }
 
 @media screen and (min-width: 375px) and (min-height: 812px) {
@@ -40,6 +124,20 @@
         margin-top: 10vh;
     }
 
+    #about__img-txt--3 {
+        margin-top: 3.5vh;
+    }
+
+
+}
+
+@media screen and (min-width: 375px) and (min-height: 667px) {
+
+    .about__img-container {
+        height: 30vh;
+        width: 30vw;
+    }
+    
 }
 
 @media screen and (min-width: 768px) and (min-height: 1024px) {
@@ -56,6 +154,13 @@
         display: none;
     }
 
+    .skills__title {
+        margin-left: 20vw;
+    }
+
+    .skills__container {
+        margin-left: 20vw;
+    }
 }
 
 @media screen and (min-width: 360px) and (min-height:740px) {
@@ -99,6 +204,48 @@
 
     .portfolio__title {
         margin-top: 0;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 600px) and (min-height: 960px) {
+
+    .aboutMeTitle {
+        margin-top: 7vh;
+    }
+
+    #about__img-txt--1 {
+        margin-top: 2.5vh;
+    }    
+    
+    .focus__title {
+        margin-bottom: 5vh;
+    }
+
+    .focus__card {
+        margin: 0 5vw;
+    }
+
+    .skills__title {
+        margin-top: 0vh;
+    }
+    
+    .skills__btn {
+        width: 35vw;
+    }
+}
+/* 
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+    
+
+} */
+
+@media screen and (min-width: 834px) and (min-width: 1112px) {
+
+    .skills__btn {
+        width: 20vw;
     }
     
 }
@@ -172,6 +319,10 @@
         margin: 0 auto 20vh auto;
         max-width: 20vw;
         max-height: 10vh;
+    }
+
+    .aboutMeTitle {
+        margin-top: 8vh;
     }
 }
 

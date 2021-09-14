@@ -132,8 +132,7 @@
     }
 
     &__list { 
-    display: flex;
-    
+        display: flex;
     }
 
     &__card {
@@ -162,14 +161,34 @@
     margin-top: 7.5vh;
     left: -6vw;
     &__title {
+        width: max-content;
+        display: block;
         font-size: $f2;
         margin-bottom: 1em;
+        margin-left: 10vw;
+        text-align: left;
     }
 
     &__btn {
         margin-bottom: 2vh;
     }
+
+    &__container {
+        display: flex;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    &__portrait {
+        width: 20vw;
+        height: 40vh;
+        object-fit: cover;
+        margin-left: 20vw;
+        position: relative;
+        top: -7vh;
+    }
 }
+
 
 /* CONTACT */
 
