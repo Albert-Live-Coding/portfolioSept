@@ -931,6 +931,146 @@ html {
   }
 }
 
+.hero {
+  width: 50vw;
+  margin: 0 auto;
+  /*     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ */
+}
+
+.hero__title {
+  color: #ff7b00;
+  margin-top: 0;
+  text-align: center;
+}
+
+.hero__txt {
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+.passt__title {
+  font-size: 1.8rem;
+  margin-bottom: 4.5vh;
+}
+
+.music__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 17vh;
+  width: 60vw;
+}
+
+.music__label {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#whatProf::before {
+  content: '';
+  font-size: 2.4rem;
+  animation: musicProf 20s ease-in-out infinite;
+  height: 9vh;
+  width: 60vw;
+  display: grid;
+  place-items: center;
+  color: #ff7b00;
+  background-color: white;
+}
+
+@keyframes musicProf {
+  0% {
+    content: 'Orchesterdirigent';
+  }
+  17% {
+    content: '';
+  }
+  25% {
+    content: 'Komponist';
+  }
+  42% {
+    content: '';
+  }
+  50% {
+    content: 'Klavierspieler';
+  }
+  68% {
+    content: '';
+  }
+  75% {
+    content: 'Geigenspieler';
+  }
+  92% {
+    content: '';
+  }
+  100% {
+    content: '';
+  }
+}
+
+#whatMusic::before {
+  content: '';
+  font-size: 2.4rem;
+  height: 9vh;
+  width: 60vw;
+  display: grid;
+  place-items: center;
+  color: rgba(92, 92, 92, 0.75);
+  background-color: white;
+  animation: musicMusic 20s 2s ease-in-out infinite;
+}
+
+@keyframes musicMusic {
+  0% {
+    content: 'Sinfonische Musik';
+  }
+  22% {
+    content: '';
+  }
+  25% {
+    content: 'Filmmusik';
+  }
+  47% {
+    content: '';
+  }
+  50% {
+    content: 'Blues & Funk';
+  }
+  73% {
+    content: '';
+  }
+  75% {
+    content: 'World Music';
+  }
+  97% {
+    content: '';
+  }
+  100% {
+    content: '';
+  }
+}
+
+.music__txt {
+  color: grey;
+}
+
+.music__txt::before {
+  content: '[';
+  color: #ff7b00;
+  margin-right: .5em;
+}
+
+.music__txt::after {
+  content: ']';
+  color: #ff7b00;
+  margin-left: .5em;
+}
+
 /* HERO */
 .hero {
   height: 100vh-header;

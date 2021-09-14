@@ -1,0 +1,156 @@
+.hero {
+    
+    width: 50vw;
+    margin: 0 auto;
+/*     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ */
+    &__title{
+        color: $accent;
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    &__txt {
+        font-size: $f2;
+        font-weight: 100;
+    }
+} 
+
+.passt {
+    //outline: 1px solid red;
+
+    &__title{
+        font-size: $f1;
+        margin-bottom: 4.5vh;
+    }
+}
+
+$passtDuration: 20s;
+
+.music {
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 17vh;
+        width: 60vw;
+    }
+
+    &__label {
+        
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+}
+
+#whatProf {
+    &::before {
+        content: '';
+        font-size: $f2;
+        animation: musicProf $passtDuration ease-in-out infinite;
+        height: 9vh;
+        width: 60vw;
+        display: grid;
+        place-items: center;
+        color: $accent;
+        background-color: $white;
+    }
+}
+
+@keyframes musicProf {
+
+    0% {
+        content: 'Orchesterdirigent';
+    }
+    17%{
+        content: '';
+    }
+    25%{
+        content: 'Komponist';
+    }
+    42%{
+        content: '';
+    }
+    50%{
+        content: 'Klavierspieler';
+    }
+    68%{
+        content: '';
+    }
+    75%{
+        content: 'Geigenspieler';
+    }
+    92%{
+        content: '';
+    }
+    100%{
+        content: '';
+    }
+}
+
+#whatMusic {
+    &::before{
+            content: '';
+            font-size: $f2;
+            height: 9vh;
+            width: 60vw;
+            display: grid;
+            place-items: center;
+            color: $grey;
+            background-color: $white;
+            animation: musicMusic $passtDuration 2s ease-in-out infinite;
+    }
+}
+
+@keyframes musicMusic {
+
+    0% {
+        content: 'Sinfonische Musik';
+    }
+    22%{
+        content: '';
+    }
+    25%{
+        content: 'Filmmusik';
+    }
+    47%{
+        content: '';
+    }
+    50%{
+        content: 'Blues & Funk';
+    }
+    73%{
+        content: '';
+    }
+    75%{
+        content: 'World Music';
+    }
+    97%{
+        content: '';
+    }
+    100%{
+        content: '';
+    }
+    
+}
+
+.music__txt{
+    color: grey;
+
+    &::before {
+        content: '[';
+        color: $accent;
+        margin-right: .5em;
+    }
+    &::after {
+        content: ']';
+        color: $accent;
+        margin-left: .5em;
+    }
+}
+
