@@ -19,7 +19,6 @@
 } 
 
 .passt {
-    //outline: 1px solid red;
 
     &__title{
         font-size: $f1;
@@ -152,5 +151,80 @@ $passtDuration: 20s;
         color: $accent;
         margin-left: .5em;
     }
+}
+
+.txtMark{
+    background-color: $accent;
+    color: $white;
+    padding: .25em;
+}
+
+.aboutMeSub{
+    color: $accent;
+    font-size: $f2;
+}
+
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__title {
+        margin-left: 0;
+        color: $accent;
+    }
+
+    &__list {
+        margin-bottom: 5vh;
+    }
+
+    &__item {
+        margin: 0 0 0 2vw;
+        padding: 0;
+
+        &:first-of-type {
+            margin-top: 2.5vh;
+        }
+        &::before {
+            content: '+';
+            color: $accent;
+            margin-right: 1em;
+        }
+    }
+
+    &__hobbies {
+        margin-left: 7.5vw;
+    }
+}
+
+.list {
+
+    &__hobbies {
+        text-align: right;
+        &::after {
+            content: '+';
+            color: $accent;
+            margin-left: 1em;
+        }
+    }
+}
+
+.line { 
+    display: flex;
+    margin: 1em 0;
 }
 
