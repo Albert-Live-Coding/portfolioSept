@@ -13,3 +13,30 @@
         color: $accent;
     }
 }
+
+.social__icon {
+
+    transition: 250ms;
+    padding: .5em;
+    
+    &:hover{
+
+        outline: 3px solid $accent;
+
+    }
+    
+    &:active {
+        
+        background-color: $accent;
+        outline: 3px solid $grey;
+        
+    }
+    
+    &:focus{
+    
+        outline: 3px solid $accent;
+        background-color: $black;
+    
+    }
+    
+}

@@ -514,6 +514,25 @@ a {
   color: #ff7b00;
 }
 
+.social__icon {
+  transition: 250ms;
+  padding: .5em;
+}
+
+.social__icon:hover {
+  outline: 3px solid #ff7b00;
+}
+
+.social__icon:active {
+  background-color: #ff7b00;
+  outline: 3px solid rgba(92, 92, 92, 0.75);
+}
+
+.social__icon:focus {
+  outline: 3px solid #ff7b00;
+  background-color: #5c5c5c;
+}
+
 .arrow-bg {
   background: url(../../img/txtBg1.svg);
   background-size: cover;
@@ -957,7 +976,7 @@ html {
 
 .hero__txt {
   font-size: 2.4rem;
-  color: rgba(92, 92, 92, 0.75);
+  color: #5c5c5c;
 }
 
 .social__nav {
@@ -979,7 +998,31 @@ html {
 }
 
 .about__focus {
-  margin: .8em 0 .8em .6em;
+  margin-left: .6em;
+  color: #5c5c5c;
+}
+
+.about__focus::after {
+  content: ' + ';
+  color: #ff7b00;
+  margin-left: .5em;
+  font-size: 20px;
+}
+
+.about__focus:hover + .about__hiden {
+  opacity: 1;
+}
+
+.about__hiden {
+  opacity: 0;
+  position: relative;
+  top: -8.5vh;
+  left: 22.5vw;
+  width: max-content;
+  color: white;
+  background-color: #ff7b00;
+  padding: .5em 1em;
+  transition: 250ms;
 }
 
 .about__focus::before {
@@ -1015,6 +1058,7 @@ html {
 
 .about__lang {
   margin: 0;
+  color: #5c5c5c;
 }
 
 .about__list {
@@ -1025,6 +1069,10 @@ html {
   content: '{';
   color: #ffb066;
   margin-right: .5em;
+}
+
+.about__hobbies {
+  color: #5c5c5c;
 }
 
 .about__hobbies::before {
@@ -1165,12 +1213,20 @@ html {
   }
 }
 
-/* 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1400px) {
+  body .about {
+    width: 60vw;
+  }
+  body .staerker {
+    position: relative;
+    left: 10vw;
+  }
+  body .about__focus {
+    margin: 2em 0;
+    color: #5c5c5c;
+  }
+}
 
-
-
-} */
 /* HERO */
 .hero {
   height: 100vh-header;
