@@ -1006,6 +1006,7 @@ html {
   color: white;
   background-color: #ff7b00;
   padding: .5em 1em;
+  min-width: fit-content;
 }
 
 .about__list-item {
@@ -1060,6 +1061,116 @@ html {
   margin: 5vh 0;
 }
 
+@media screen and (min-width: 320px) and (min-height: 568px) {
+  #mr3 {
+    margin-right: 52px;
+  }
+}
+
+@media screen and (min-width: 412px) and (min-height: 732px) {
+  #mr1 {
+    margin-right: 170px;
+  }
+  #mr2 {
+    margin-right: 110px;
+  }
+  #mr3 {
+    margin-right: 95px;
+  }
+  #mr4 {
+    margin-right: 58px;
+  }
+}
+
+@media screen and (min-width: 414px) and (min-height: 896px) {
+  .social__nav {
+    width: 70vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 600px) and (min-height: 960px) {
+  .hero {
+    justify-content: space-evenly;
+  }
+  .hero__img-container {
+    width: 75vw;
+  }
+  .hero__img {
+    width: 100%;
+  }
+  .hero__content {
+    margin: 0;
+  }
+  .hero__title {
+    margin-bottom: .5em;
+  }
+  .social__nav {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .portrait__third {
+    width: 30vw;
+    height: 65vh;
+    position: absolute;
+    top: 77.5vh;
+    left: 60vw;
+  }
+}
+
+@media screen and (min-width: 834px) and (min-height: 1112px) {
+  .portrait__third {
+    width: 30vw;
+    height: 65vh;
+    position: absolute;
+    top: 75vh;
+    left: 60vw;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-height: 1280px) {
+  .portrait__third {
+    width: 30vw;
+    height: 55vh;
+    position: absolute;
+    top: 68vh;
+    left: 60vw;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 800px) {
+  .hero {
+    margin: 0 auto;
+    justify-content: space-evenly;
+    width: 40vw;
+  }
+  .hero__title {
+    font-size: 4.1rem;
+  }
+  .hero__img {
+    height: 60vh;
+  }
+  .portrait__third {
+    width: 30vw;
+    height: 85vh;
+    position: absolute;
+    top: 120vh;
+    left: 60vw;
+  }
+  .social__nav {
+    width: 37.5vw;
+    margin: 0 auto;
+  }
+}
+
+/* 
+@media screen and (min-width: 1400px){
+
+
+
+} */
 /* HERO */
 .hero {
   height: 100vh-header;
