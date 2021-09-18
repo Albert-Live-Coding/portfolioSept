@@ -13,10 +13,12 @@
   </head>
   <main>
       <body>
-          
         <article class="hero">
-          <h1 class="hero__title">Albert <br>Clemente</h1>
-          <p class="hero__txt">Webentwickler</p>
+          <div class="hero__img-container"><img src="./img/anne-gibson.svg" alt="" class="hero__img"></div>
+          <div class="hero__content">
+            <h1 class="hero__title">Albert <br>Clemente</h1>
+            <p class="hero__txt">Webentwickler</p>
+          </div>
         </article>
         
         <article class="passt">
@@ -28,64 +30,82 @@
           </div>
         </article>
 
-        <article class="interest">
-          <p style="font-size: 24px; color: red;">TEXT BEARBEITEN</p>
+        <article>
+          <p class='erfahrung'>Dank meiner Erfahrung als Veranstalter habe ich die Freude am Grafikdesign und der Gestaltung von Webseiten entdeckt </p>
         </article>
 
-        <article class="fokus">
-          <h2 class="aboutMeSub">Meine Stärke:</h2>
-          <p>Kreativität im Dienst Ihren Ideen</p>
-          <p>[ damit Ihre Brand mehr Kunden erreicht ]</p>
-          <p>Optimisierung der Resources</p>
-          <p>[ damit Ihre Webseite am schnelsten und efiziensten ist ]</p>
-        </article>
-
-        <article class="tools">
-          <section class=" tools__first">
-            <h2 class="aboutMeSub">Dafür nutze ich im Alltag:</h2>
-            <ul class="tools__list">
-              <li class="tools__item">Figma</li>
-              <li class="tools__item">Wordpress</li>
-              <li class="tools__item">HTML + CSS + JS</li>
-              <li class="tools__item">Github</li>
-              <li class="tools__item">Davinci Resolve</li>
-              <li class="tools__item">Lightroom</li>
-              <li class="tools__item">Krita</li>
-            </ul>
+          <section class="about">
+            <h2 class="about__title">Meine Stärke:</h2>
+            <span class="focus-horizontal">
+              <p class="about__focus">Kreativität im Dienst Ihren Ideen</p>
+              <p class="about__focus--hiden">damit Ihre Brand mehr Kunden erreicht</p>
+            </span>
+            <span class="focus-horizontal">
+              <p class="about__focus">Optimisierung der Resources</p>
+              <p class="about__focus--hiden">damit Ihre Webseite am schnelsten und efiziensten ist</p>
+            </span>
           </section>
-          <section class="tools__container tools__lieblingste">
-            <h2 class="aboutMeSub">Lieblingste ...</h2>
-            <div>
-              <div class="line">
-                <p class="what">preprocessor</p>
-                <p class="which">scss</p>
-              </div>
-              <div class="line">
-                <p class="what">design system</p>
-                <p class="which">Atomic Design System</p>
-              </div>
-              <div class="line">
-                <p class="what">naming convention</p>
-                <p class="which">BEM</p>
-              </div>
+
+        <article>
+          <div class="about__portrait-container">
+
+            <div class="about__portrait-txt">
+
+              <section class="about">
+                <h2 class="about__title">Dafür nutze ich im Alltag:</h2>
+                <ul>
+                  <li class="about__tools">Figma</li>
+                  <li class="about__tools">Wordpress</li>
+                  <li class="about__tools">HTML + CSS + JS</li>
+                  <li class="about__tools">Github</li>
+                  <li class="about__tools">Davinci Resolve</li>
+                  <li class="about__tools">Lightroom</li>
+                  <li class="about__tools">Krita</li>
+                </ul>
+              </section>
+              <section class="about">
+                <h2 class="about__title">Lieblingste ...</h2>
+                <ul>
+                  <li class="about__list-item"><span class="about__list-title" id="mr1">IDE</span><span class="about__space"></span> VSC</li>
+                  <li class="about__list-item"><span class="about__list-title" id="mr2">Preprocessor</span>SCSS</li>
+                  <li class="about__list-item"><span class="about__list-title" id="mr3">Design System</span>Atomic</li>
+                  <li class="about__list-item"><span class="about__list-title" id="mr4">Naming Convention</span>BEM</li>
+                </ul>
+              </section>
+              
             </div>
+            </div>
+
+
+          </div>
+
+
+            <section class="about">
+              <h2 class="about__title">Spreche fliessend</h2>
+            <ul>
+              <li class="about__lang">Deutsch</li>
+              <li class="about__lang">Englisch</li>
+              <li class="about__lang">Spanisch</li>
+              <li class="about__lang">Katalanisch</li>
+            </ul>
         </section>
-        <section class="tools__container tools__lang">
-          <p><span>Spreche </span>fliessend</p>
+        <section class="about">
+          <h2 class="about__title">In meiner freie Zeit</h2>
           <ul>
-            <li class="list__lang">Deutsch</li>
-            <li class="list__lang">Englisch</li>
-            <li class="list__lang">Spanisch</li>
-            <li class="list__lang">Katalanisch</li>
-          </ul>
-        </section>
-        <section class="tools__container2 tools__hobbies">
-          <ul>
-            <li class="list__hobbies">Höre und liebe alle Art Musik</li>
-            <li class="list__hobbies">Lebe glücklich in Leipzig</li>
-            <li class="list__hobbies">Lesse gerne Bücher</li>
+            <li class="about__hobbies">Höre und liebe alle Art Musik</li>
+            <li class="about__hobbies">Lebe glücklich in Leipzig</li>
+            <li class="about__hobbies">Lesse gerne Bücher</li>
           </ul>
         </section>
         </article>
+        <section> 
+          <ul class="social__nav">
+            <li><a href="https://github.com/AlbertLeipzig" target="blank"><img src="./icon/211903_github_social_icon.svg" alt="github" class="icon__med"></a></li>
+            <li><a href="https://twitter.com/albert_clemente" target="blank"><img src="./icon/2561485_twitter_icon.svg" alt="twitter" class="icon__med"></a></li>
+            <li><a href="https://codepen.io/your-work" target="blank"><img src="./icon/4519014_codepen_icon.svg" alt="codepen-io" class="icon__med"></a></li>
+            <li><a href="mailto:alberclemvill@gmail.com" target="blank"><img src="./icon/envelope-alt.svg" alt="email" class="icon__med"></a></li>
+          </ul>
+        </section>
+        <script src="./js/main.js"></script>
       </body>
   </main>
