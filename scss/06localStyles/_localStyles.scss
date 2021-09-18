@@ -71,13 +71,16 @@
 
 /* ABOUT ME */
 
-.aboutMeTitle {
-    margin-top: 5vh;
-}
 
-.about {
+.aboutMe {
     display: flex;
     justify-content: space-between;
+
+    &__title {
+        margin-top: 5vh;
+        color: $accent;
+    }
+
 
     &__img-container{
         height: 35vh;
@@ -161,13 +164,23 @@
     position: relative;
     margin-top: 7.5vh;
     left: -6vw;
+    width: 80vw;
+    background: url(../../img/cafe-muster.svg);
+    background-size: cover;
+
     &__title {
         width: max-content;
         display: block;
         font-size: $f2;
         margin-bottom: 1em;
-        margin-left: 10vw;
+        margin-left: 3vw;
         text-align: left;
+        background-color: $white;
+        margin-top: 1em;
+    }
+
+    &__item {
+        background-color: $white;
     }
 
     &__btn {
@@ -177,7 +190,7 @@
     &__container {
         display: flex;
         width: 80vw;
-        margin-left: 10vw;
+        margin-left: 2vw;
     }
 
     &__portrait {
@@ -198,7 +211,7 @@
     height: 80vh;
 
     &__title{
-        margin: 7vh 0 10vh;
+        margin: 0 0 10vh;
     }
 
     &__link{
@@ -230,4 +243,10 @@
 iframe {
     height: 75%;
     margin-top: 5vh;
+}
+
+.link__btn {
+    color: $white;
+    background-color: $accent;
+    padding: .5em 1em;
 }
