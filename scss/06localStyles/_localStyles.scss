@@ -7,6 +7,9 @@
 
 .hero{
     height: 100vh - header;
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
 
     &__logo{
         width: $imgBig;
