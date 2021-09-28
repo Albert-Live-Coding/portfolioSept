@@ -1468,6 +1468,12 @@ iframe {
   padding: .5em 1em;
 }
 
+.btn__link {
+  display: block;
+  width: max-content;
+  height: max-content;
+}
+
 html {
   scroll-behavior: smooth;
 }
